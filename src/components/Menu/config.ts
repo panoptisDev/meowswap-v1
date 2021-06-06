@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://www.goosedefi.com/'
+    href: '#'
   },
   {
     label: 'Trade',
@@ -21,11 +21,11 @@ const config: MenuEntry[] = [
       }
     ]
   },
-  // {
-  //   label: 'Farms',
-  //   icon: 'FarmIcon',
-  //   href: 'https://www.goosedefi.com/farms'
-  // },
+  {
+    label: 'Farms',
+    icon: 'FarmIcon',
+    href: '#'
+  },
   // {
   //   label: 'Nests',
   //   icon: 'PoolIcon',
@@ -58,18 +58,20 @@ const config: MenuEntry[] = [
   //     },
   //   ]
   // },
-  // {
-  //   label: 'More',
-  //   icon: 'MoreIcon',
-  //   items: [
-  //     {
-  //       label: "Github",
-  //       href: "https://github.com/goosedefi/",
-  //     },
-  //     {
-  //       label: "Docs",
-  //       href: "https://goosedefi.gitbook.io/goose-finance/",
-  //     },
+  {
+    label: 'More',
+    icon: 'MoreIcon',
+    items: [
+      {
+        label: "Github",
+        href: "https://github.com/meowmeowfinance",
+      },
+      {
+        label: "Docs",
+        href: "#",
+      },
+    ]
+  }
   //     {
   //       label: "Blog",
   //       href: "https://goosefinance.medium.com/",
