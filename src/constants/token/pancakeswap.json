@@ -1,0 +1,38 @@
+{
+  "name": "pancakeswap",
+  "timestamp": "2020-08-25T15:41:29.665Z",
+  "version": {
+    "major": 1,
+    "minor": 3,
+    "patch": 1
+  },
+  "tags": {},
+  "logoURI": "/images/coins/matic.png",
+  "keywords": [
+    "pancake",
+    "default"
+  ],
+  "tokens": [
+    {
+      "name": "Meow Token",
+      "symbol": "MEOWB",
+      "address": "0x8Cc99Fd6a3A606f98A54a00E5EAb3Ff9372479De",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "chainId": 137,
+      "decimals": 6
+    },
+    {
+      "name": "Wrapped Ether",
+      "symbol": "ETH",
+      "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+      "chainId": 137,
+      "decimals": 18
+    }
+  ]
+}
