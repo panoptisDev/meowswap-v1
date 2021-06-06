@@ -1,0 +1,42 @@
+{
+  "files": {
+    "static/js/0.6623b700.chunk.js": "./static/js/0.6623b700.chunk.js",
+    "static/js/0.6623b700.chunk.js.map": "./static/js/0.6623b700.chunk.js.map",
+    "static/js/1.8d31cf6d.chunk.js": "./static/js/1.8d31cf6d.chunk.js",
+    "static/js/1.8d31cf6d.chunk.js.map": "./static/js/1.8d31cf6d.chunk.js.map",
+    "main.js": "./static/js/main.7098690f.chunk.js",
+    "main.js.map": "./static/js/main.7098690f.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e3579d1b.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e3579d1b.js.map",
+    "static/css/4.191f4a61.chunk.css": "./static/css/4.191f4a61.chunk.css",
+    "static/js/4.5538a514.chunk.js": "./static/js/4.5538a514.chunk.js",
+    "static/js/4.5538a514.chunk.js.map": "./static/js/4.5538a514.chunk.js.map",
+    "static/js/5.db8eba69.chunk.js": "./static/js/5.db8eba69.chunk.js",
+    "static/js/5.db8eba69.chunk.js.map": "./static/js/5.db8eba69.chunk.js.map",
+    "static/js/6.f78854d7.chunk.js": "./static/js/6.f78854d7.chunk.js",
+    "static/js/6.f78854d7.chunk.js.map": "./static/js/6.f78854d7.chunk.js.map",
+    "static/js/7.1eb32c6e.chunk.js": "./static/js/7.1eb32c6e.chunk.js",
+    "static/js/7.1eb32c6e.chunk.js.map": "./static/js/7.1eb32c6e.chunk.js.map",
+    "static/js/8.e923c2aa.chunk.js": "./static/js/8.e923c2aa.chunk.js",
+    "static/js/8.e923c2aa.chunk.js.map": "./static/js/8.e923c2aa.chunk.js.map",
+    "static/js/9.ba695920.chunk.js": "./static/js/9.ba695920.chunk.js",
+    "static/js/9.ba695920.chunk.js.map": "./static/js/9.ba695920.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/4.191f4a61.chunk.css.map": "./static/css/4.191f4a61.chunk.css.map",
+    "static/js/0.6623b700.chunk.js.LICENSE.txt": "./static/js/0.6623b700.chunk.js.LICENSE.txt",
+    "static/js/4.5538a514.chunk.js.LICENSE.txt": "./static/js/4.5538a514.chunk.js.LICENSE.txt",
+    "static/js/5.db8eba69.chunk.js.LICENSE.txt": "./static/js/5.db8eba69.chunk.js.LICENSE.txt",
+    "static/js/6.f78854d7.chunk.js.LICENSE.txt": "./static/js/6.f78854d7.chunk.js.LICENSE.txt",
+    "static/js/7.1eb32c6e.chunk.js.LICENSE.txt": "./static/js/7.1eb32c6e.chunk.js.LICENSE.txt",
+    "static/media/inter.css": "./static/media/Inter.var.a738a131.woff2",
+    "static/media/blue-loader.def91951.svg": "./static/media/blue-loader.def91951.svg",
+    "static/media/dropdown.87531686.svg": "./static/media/dropdown.87531686.svg",
+    "static/media/matic-logo.1140771b.png": "./static/media/matic-logo.1140771b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3579d1b.js",
+    "static/css/4.191f4a61.chunk.css",
+    "static/js/4.5538a514.chunk.js",
+    "static/js/main.7098690f.chunk.js"
+  ]
+}
