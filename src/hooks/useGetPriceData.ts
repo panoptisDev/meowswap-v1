@@ -4,12 +4,12 @@ import { useMulticallContract } from './useContract'
 import ERC20_INTERFACE from '../constants/abis/erc20'
 import priceContracts from '../constants/eggPriceContracts'
 
-type ApiResponse = {
-  prices: {
-    [key: string]: string
-  }
-  update_at: string
-}
+// type ApiResponse = {
+//   prices: {
+//     [key: string]: string
+//   }
+//   update_at: string
+// }
 
 /**
  * Due to Cors the api was forked and a proxy was created
@@ -32,8 +32,8 @@ const useGetPriceData = () => {
             [busdAddress, ERC20_INTERFACE.encodeFunctionData("balanceOf", [lpAddress])],
           ];
 
-          const [resultsBlockNumber, result] = await multicallContract.aggregate(calls);
-          const [cakeAmount, busdAmount] = result.map(r => ERC20_INTERFACE.decodeFunctionResult("balanceOf", r));
+          const result = await multicallContract.aggregate(calls);
+          const [cakeAmount, busdAmount] = result[1].map(r => ERC20_INTERFACE.decodeFunctionResult("balanceOf", r));
           const cake = new BigNumber(cakeAmount);
           const busd = new BigNumber(busdAmount);
           const cakePrice = parseInt(busd.toFixed()) / parseInt(cake.toFixed());

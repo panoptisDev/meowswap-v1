@@ -152,8 +152,6 @@ export default function RemoveLiquidity({
       message,
     })
 
-    console.log(">>>>>>>>>>>>>>>>>>>>data", data);
-
     library
       .send('eth_signTypedData_v4', [account, data])
       .then(splitSignature)
@@ -258,7 +256,6 @@ export default function RemoveLiquidity({
           signatureData.r,
           signatureData.s
         ]
-        console.log(">>>>>>>>>>>>>>>>>>", args);
       }
 
       // removeLiquidityETHWithPermit
