@@ -95,7 +95,7 @@ export function CurrencySearch({
     (currency: Currency) => {
       onCurrencySelect(currency)
       onDismiss()
-      if (audioPlay) {
+      if (audioPlay === undefined) {
         const audio = document.getElementById('bgMusic') as HTMLAudioElement
         if (audio) {
           audio.play()
