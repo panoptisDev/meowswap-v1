@@ -35,12 +35,8 @@ const useGetPriceData = () => {
           const [resultsBlockNumber, result] = await multicallContract.aggregate(calls);
           const [cakeAmount, busdAmount] = result.map(r => ERC20_INTERFACE.decodeFunctionResult("balanceOf", r));
           const cake = new BigNumber(cakeAmount);
-          console.log(">>>>>>>>>>>>>>>>>>>>>>cake", cake)
           const busd = new BigNumber(busdAmount);
-          console.log(">>>>>>>>>>>>>>>>>>>>>>usdt", busd)
-          console.log("price:", cake.div(busd));
-          const cakePrice = busd.div(cake).toNumber();
-          console.log(">>>>>>>>>>>>>>>>>>>>>", cakePrice);
+          const cakePrice = parseInt(busd.toFixed()) / parseInt(cake.toFixed());
           setData(cakePrice)
         }
       } catch (error) {
