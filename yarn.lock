@@ -10581,10 +10581,10 @@ memory-fs@^0.5.0:
     errno "^0.1.3"
     readable-stream "^2.0.1"
 
-meow-uikit@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/meow-uikit/-/meow-uikit-1.0.8.tgz#bf0d4f167dfac80b6cac7622a08a1336fe88d1cd"
-  integrity sha512-3txdlz1uGwPyY7KMbmK71G0ZaadP2wN2jht5Zm6d81kZQFS2LSIxibQg1L0MpSlhpA7mLQss+WsonZ+bbauPxA==
+meow-uikit@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/meow-uikit/-/meow-uikit-1.0.9.tgz#2d0ea1e2f0047e55722a3003038a369467d16e8e"
+  integrity sha512-ts0yrdFxWTba+iv2KETf45SbM/LCSkJnHai3+Vhmlj8PYRwgHLPIV+Wp4JpsjdwvuRkXNYQBzQvOKlEkrF0j1g==
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"

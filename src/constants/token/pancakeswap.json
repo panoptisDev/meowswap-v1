@@ -18,21 +18,24 @@
       "symbol": "MEOWB",
       "address": "0x26d29C89AffB567592E0a04c882bc28D299126da",
       "chainId": 137,
-      "decimals": 18
+      "decimals": 18,
+      "logoURI": "/images/coins/MEOWB.png"
     },
     {
       "name": "Tether USD",
       "symbol": "USDT",
       "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
       "chainId": 137,
-      "decimals": 6
+      "decimals": 6,
+      "logoURI": "/images/coins/USDT.png"
     },
     {
       "name": "Wrapped Ether",
       "symbol": "ETH",
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
       "chainId": 137,
-      "decimals": 18
+      "decimals": 18,
+      "logoURI": "/images/coins/ETH.png"
     }
   ]
 }
