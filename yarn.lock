@@ -10592,10 +10592,10 @@ meow-uikit@1.0.14:
     react-transition-group "^4.4.1"
     styled-system "^5.1.5"
 
-meowswap-test-sdk@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/meowswap-test-sdk/-/meowswap-test-sdk-1.0.2.tgz#277b54d1ac086345fe74b024c4ea4e35a44768ac"
-  integrity sha512-YHISZKcKQSdELWgu7BdMn8knbEYIq7L/rDeOJYqfaiVrupeqBNSVOqtLZwib3AUesaMwQMGWO8JhFYTkaevRFA==
+meowswap-test-sdk@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/meowswap-test-sdk/-/meowswap-test-sdk-1.0.5.tgz#ce2bbc3f04677ae9bb7c349250d7c935001c7488"
+  integrity sha512-VrTvEq83OkBDxfOMxXbnVEmXqFKu26IBeuYl0II0IgtZ83B7pdkXbqEcShMNjQ9EH6W0e6e20Db9SrgifI6caQ==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"

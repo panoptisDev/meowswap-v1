@@ -123,7 +123,7 @@ export default function RemoveLiquidity({
       { name: 'verifyingContract', type: 'address' },
     ]
     const domain = {
-      name: 'Pancake LPs',
+      name: 'Uniswap V2',
       version: '1',
       chainId,
       verifyingContract: pair.liquidityToken.address,
@@ -151,6 +151,8 @@ export default function RemoveLiquidity({
       primaryType: 'Permit',
       message,
     })
+
+    console.log(">>>>>>>>>>>>>>>>>>>>data", data);
 
     library
       .send('eth_signTypedData_v4', [account, data])
@@ -254,9 +256,11 @@ export default function RemoveLiquidity({
           false,
           signatureData.v,
           signatureData.r,
-          signatureData.s,
+          signatureData.s
         ]
+        console.log(">>>>>>>>>>>>>>>>>>", args);
       }
+
       // removeLiquidityETHWithPermit
       else {
         methodNames = ['removeLiquidityWithPermit']
@@ -271,18 +275,19 @@ export default function RemoveLiquidity({
           false,
           signatureData.v,
           signatureData.r,
-          signatureData.s,
+          signatureData.s
         ]
       }
     } else {
       throw new Error('Attempting to confirm without approval or a signature. Please contact support.')
     }
+
     const safeGasEstimates: (BigNumber | undefined)[] = await Promise.all(
-      methodNames.map((methodName, index) =>
+      methodNames.map(methodName =>
         router.estimateGas[methodName](...args)
           .then(calculateGasMargin)
-          .catch((e) => {
-            console.error(`estimateGas failed`, index, methodName, args, e)
+          .catch(err => {
+            console.error(`estimateGas failed`, methodName, args, err)
             return undefined
           })
       )

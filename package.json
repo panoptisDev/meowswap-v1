@@ -45,7 +45,7 @@
     "jazzicon": "^1.5.0",
     "lodash.flatmap": "^4.5.0",
     "meow-uikit": "1.0.14",
-    "meowswap-test-sdk": "^1.0.2",
+    "meowswap-test-sdk": "1.0.5",
     "multicodec": "^2.0.0",
     "multihashes": "^3.0.1",
     "polished": "^3.3.2",
