@@ -18,6 +18,15 @@ export const EOS = new Token(ChainId.MAINNET, '0x56b6fb708fc5732dec1afc8d8556423
 export const DOT = new Token(ChainId.MAINNET, '0x7083609fce4d1d8dc0c979aab8c869ea2c873402', 18, 'DOT', 'Polkadot Token')
 export const ETH = new Token(ChainId.MAINNET, '0x2170ed0880ac9a755fd29b2688956bd959f933f8', 18, 'ETH', 'Ethereum Token')
 
+export const MATIC: { [key: string]: Token } = {
+  USDC: new Token(ChainId.MATIC,'0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',6,'USDC','USD Coin'),
+  WBTC: new Token(ChainId.MATIC,'0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6',8,'WBTC','Wrapped Bitcoin'),
+  DAI: new Token(ChainId.MATIC,'0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063',18,'DAI','Dai Stablecoin'),
+  WETH: new Token(ChainId.MATIC,'0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619',18,'WETH','Wrapped Ether'),
+  USDT: new Token(ChainId.MATIC,'0xc2132D05D31c914a87C6611C10748AEb04B58e8F',6,'USDT','Tether USD'),
+}
+
+
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
   [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
@@ -27,7 +36,8 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT, EOS, DOT]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT, EOS, DOT],
+  [ChainId.MATIC]: [...WETH_ONLY[ChainId.MATIC], MATIC.USDC, MATIC.WBTC, MATIC.DAI, MATIC.WETH, MATIC.USDT],
 }
 
 /**
@@ -43,13 +53,15 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT],
+  [ChainId.MATIC]: [...WETH_ONLY[ChainId.MATIC], MATIC.USDC, MATIC.WBTC, MATIC.DAI, MATIC.WETH, MATIC.USDT],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT],
+  [ChainId.MATIC]: [...WETH_ONLY[ChainId.MATIC], MATIC.USDC, MATIC.WBTC, MATIC.DAI, MATIC.WETH, MATIC.USDT],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
@@ -60,6 +72,14 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
     ],
     [BUSD, USDT],
     [DAI, USDT]
+  ],
+  [ChainId.MATIC]: [
+    [
+      new Token(ChainId.MATIC, '0x8Cc99Fd6a3A606f98A54a00E5EAb3Ff9372479De', 18, 'MEOWB', 'Meow Token'),
+      new Token(ChainId.MATIC, '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270', 18, 'WMATIC', 'Wrapped Matic')
+    ],
+    [MATIC.USDC, MATIC.USDT],
+    [MATIC.DAI, MATIC.USDT]
   ]
 }
 
